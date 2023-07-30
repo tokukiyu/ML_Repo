@@ -1,0 +1,29 @@
+from nltk.probability import FreqDist
+from nltk.tokenize import word_tokenize
+from nltk.corpus import inaugural
+sports_age = "Participating in team sports like softball, softball, basketball, tennis or volleyball doesn't have to stop based on your age."
+sports_age_tokens = word_tokenize(sports_age)
+sports_age_freqdist = FreqDist(sports_age_tokens)
+print(f"\nFrequency Results of Each Word Token in 'sports_age': \n{sports_age_freqdist}")
+
+sports_age_freqdist_most_common = sports_age_freqdist.most_common()
+print(sports_age_freqdist_most_common)
+print("\nIn Order of Most Common Frequencies: ")
+for element in sports_age_freqdist_most_common:
+  print(element)
+  
+"""
+    We can use conditionals along with the frequency distribution of hero to retrieve 
+    specific token frequencies. In this case, we want all tokens 
+    whose length and frequency distribution are greater than 1.
+"""   
+hero = "He saw that his hero and his commander were following quite a different train of thought."
+hero_freqdist = FreqDist(word_tokenize(hero))
+print(f"\nFrequency Results of Each Word Token in 'hero': {hero_freqdist}")
+conditional_hero = []
+for token in hero_freqdist.most_common():
+  if len(token[0]) > 1 and token[1] > 1:
+    conditional_hero.append(token)
+conditional_hero_no_dupes = set(conditional_hero)
+
+print(f"\nTokens longer than 1 character and with a frequency distribution greater than 1: {conditional_hero_no_dupes}")
