@@ -1,0 +1,3 @@
+Asynchrones Schreiben erhĂśht die Leistung ein wenig, es verringert jedoch die ZuverlĂ¤ssigkeit, da die Gefahr eines Datenverlusts besteht, falls der Server zwischen der AnnahmebestĂ¤tigung des Schreibauftrags und dem tatsĂ¤chlichen Schreibvorgang auf der Festplatte abstĂźrzt.
+Aus diesem Grund erhalten Sie fĂźr jede bei uns getĂ¤tigte Bestellung eine AnnahmebestĂ¤tigung, die noch einmal alle wichtigen Daten des Auftrags zusammenfaĂśnnen.
+Durch Vorlage der AnnahmebestĂ¤tigung Ihrer FakultĂ¤t und des ausgefĂźllten Antrags auf Registrierung im Studierendensekretariat (deutsche Promovierende) oder beim International Admissions und Services (IAS) (internationale Promovierende) werden Sie als Doktorand*in registriert.
