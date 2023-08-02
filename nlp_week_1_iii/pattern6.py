@@ -9,6 +9,6 @@ for pattern in patterns910:
         {pattern} is in the string: {numbers2}')
         print(f'Pattern found: {re.findall(pattern, numbers2)}')
     else:
-        print(f'\nNo Match! None of the numbers in {pattern} are \
+        print(f'\nNo Match! hell no, None of the numbers in {pattern} are \
         in the string: {numbers2}')
         
