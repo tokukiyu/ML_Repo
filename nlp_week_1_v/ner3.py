@@ -6,6 +6,7 @@ def find_NEs_pretty2(text):
   tags = pos_tag(tokens)
   NEs = ne_chunk(tags, binary=True)
   entities = []
+  # changed
   for chunked_word in NEs:
     if hasattr(chunked_word, 'label') and chunked_word.label() == 'NE':
       named_entity = ' '.join(word[0] for word in chunked_word)
