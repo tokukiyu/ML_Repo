@@ -3,8 +3,8 @@ from nltk.tokenize import word_tokenize
 import numpy as np
 import string
  
-documents = ['The dog plays with the ball', 'The cat plays with the ball']
- 
+# documents = ['The dog plays with the ball', 'The cat plays with the ball']
+documents = ['The dog plays fetch', 'The cat hunts bugs']
 # Create Tokens from the set of documents
 all_words = []
 for document in documents:
