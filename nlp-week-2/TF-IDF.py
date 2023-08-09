@@ -46,5 +46,5 @@ index += 1
 vectors.append(doc_vec) 
 
 # outside both loops
-
+# hello upldate
 print("{0} \n{1}\n".format(vocabulary,np.array(vectors)))
